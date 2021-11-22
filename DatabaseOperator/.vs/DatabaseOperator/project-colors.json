@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "02e15f01-8a9f-4e04-b255-73d0ef1665bc": {
+      "ProjectGuid": "02e15f01-8a9f-4e04-b255-73d0ef1665bc",
+      "DisplayName": "DatabaseOperator.API",
+      "ColorIndex": 0
+    },
+    "4a663263-aebb-44fd-b1ca-a1b53b271d5a": {
+      "ProjectGuid": "4a663263-aebb-44fd-b1ca-a1b53b271d5a",
+      "DisplayName": "DataBaseOperator.Domain.Core",
+      "ColorIndex": 1
+    },
+    "fe5e301b-5e20-41d3-87f3-28b565d7afe2": {
+      "ProjectGuid": "fe5e301b-5e20-41d3-87f3-28b565d7afe2",
+      "DisplayName": "DataBaseOperator.Domain.Interfaces",
+      "ColorIndex": 2
+    },
+    "bc3cebd6-bf3c-48fa-b53e-d0038648cc1b": {
+      "ProjectGuid": "bc3cebd6-bf3c-48fa-b53e-d0038648cc1b",
+      "DisplayName": "DataBaseOperator.Models.Data",
+      "ColorIndex": 3
+    },
+    "6a29c40e-35aa-47d7-940c-f552fe6e3c77": {
+      "ProjectGuid": "6a29c40e-35aa-47d7-940c-f552fe6e3c77",
+      "DisplayName": "DataBaseOperator.Models.Buisness",
+      "ColorIndex": 4
+    },
+    "f0853824-9bc9-4def-9dce-57c247bb9dc0": {
+      "ProjectGuid": "f0853824-9bc9-4def-9dce-57c247bb9dc0",
+      "DisplayName": "DataBaseOperator.DAL.Data",
+      "ColorIndex": 5
+    },
+    "16100fc3-057b-4858-b44d-1e2f2cdf2e3f": {
+      "ProjectGuid": "16100fc3-057b-4858-b44d-1e2f2cdf2e3f",
+      "DisplayName": "DataBaseOperator.DAL.Data.SQLite",
+      "ColorIndex": 6
+    }
+  },
+  "NextColorIndex": 7
+}

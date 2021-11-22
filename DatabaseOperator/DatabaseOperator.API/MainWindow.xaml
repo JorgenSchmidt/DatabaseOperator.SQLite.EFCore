@@ -5,8 +5,82 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DatabaseOperator.API"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="SQL Operator" Height="670" Width="605" ResizeMode="NoResize">
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+    
+    
     <Grid>
+        
+        <!-- For change DataBases -->
+        <Label Content="Operations for change DataBases:" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="189"/>
+        <Button Margin="10,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="60">
+            <TextBlock TextAlignment="Center"> Add <LineBreak/> Object </TextBlock>
+        </Button>
+        <Button Margin="80,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="60">
+            <TextBlock TextAlignment="Center"> Update <LineBreak/> Object </TextBlock>
+        </Button>
+        <Button Margin="150,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="60">
+            <TextBlock TextAlignment="Center"> Delete <LineBreak/> Object </TextBlock>
+        </Button>
+        <Button Margin="220,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="60">
+            <TextBlock TextAlignment="Center"> Read <LineBreak/> DataBases </TextBlock>
+        </Button>
+
+        <!-- For Search Information in DataBases -->
+        <Label Content="Operations for search information in DataBases:" Margin="305,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="265"/>
+        <Button Margin="305,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="60">
+            <TextBlock TextAlignment="Center"> Search <LineBreak/> by ID </TextBlock>
+        </Button>
+        <Button Margin="375,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="60">
+            <TextBlock TextAlignment="Center"> Search by <LineBreak/> Name </TextBlock>
+        </Button>
+        <Button Margin="445,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="60">
+            <TextBlock TextAlignment="Center"> Search us.<LineBreak/>by Balance </TextBlock>
+        </Button>
+        <Button Margin="515,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="65">
+            <TextBlock TextAlignment="Center"> Search pr. <LineBreak/> By Qt or Pr</TextBlock>
+        </Button>
+
+        <!-- For integration Databases by DataBase name-->
+        <Button Margin="10,95,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="270">
+            <TextBlock TextAlignment="Center"> Integrate to this data base </TextBlock>
+        </Button>
+        <Button Margin="305,95,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="275">
+            <TextBlock TextAlignment="Center"> Integrate to this data base </TextBlock>
+        </Button>
+
+        <!-- For sort Databases -->
+        <Button Margin="10,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="270">
+            <TextBlock TextAlignment="Center"> Sorting this data base (full) </TextBlock>
+        </Button>
+        <Button Margin="305,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="275">
+            <TextBlock TextAlignment="Center"> Sorting this data base (full)</TextBlock>
+        </Button>
+
+        <!-- ListViews -->
+        <ListView Margin="10,210,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="400" Width="270">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="User ID" Width="48"/>
+                    <GridViewColumn Header="First Name" Width="75"/>
+                    <GridViewColumn Header="Second Name" Width="85"/>
+                    <GridViewColumn Header="Balance" Width="55"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView Margin="305,210,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="400" Width="273">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Product ID" Width="65"/>
+                    <GridViewColumn Header="Product Name" Width="97"/>
+                    <GridViewColumn Header="Quantity" Width="55"/>
+                    <GridViewColumn Header="Price" Width="50"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
 
     </Grid>
 </Window>
