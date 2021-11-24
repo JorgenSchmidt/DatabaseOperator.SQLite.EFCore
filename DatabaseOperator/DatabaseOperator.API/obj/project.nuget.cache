@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oHqtioA250QPP+CnLHejJ8PrVPhF5cp7MESqdK4NLy/lU97VX5EXOn50C5jD6ytQ82r6iZsc1wprqYUcVkW3pw==",
+  "dgSpecHash": "l2XOzRj2SoHPN2yNHmhoekSeQLaJB8ufZW6C0oCxmv6/Dp6igdDXgzkZvwzxtW9aCwWI93AOdV9yhSbHeF7y1Q==",
   "success": true,
   "projectFilePath": "D:\\ProgramData\\Projects\\DatabaseOperator.SQLite.EFCore\\DatabaseOperator\\DatabaseOperator.API\\DatabaseOperator.API.csproj",
   "expectedPackageFiles": [],

@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Views\" />
-    <Folder Include="ViewModels\" />
+    <ProjectReference Include="..\DataBaseOperator.DAL.Data.SQLite\DataBaseOperator.DAL.Data.SQLite.csproj" />
+    <ProjectReference Include="..\DataBaseOperator.Domain.Core\DataBaseOperator.Domain.Core.csproj" />
   </ItemGroup>
 
 </Project>

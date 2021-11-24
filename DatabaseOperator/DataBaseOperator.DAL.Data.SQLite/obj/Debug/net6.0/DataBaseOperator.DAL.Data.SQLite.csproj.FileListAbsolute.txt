@@ -1,0 +1,12 @@
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\bin\Debug\net6.0\DataBaseOperator.DAL.Data.SQLite.deps.json
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\bin\Debug\net6.0\DataBaseOperator.DAL.Data.SQLite.dll
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\bin\Debug\net6.0\ref\DataBaseOperator.DAL.Data.SQLite.dll
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\bin\Debug\net6.0\DataBaseOperator.DAL.Data.SQLite.pdb
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\obj\Debug\net6.0\DataBaseOperator.DAL.Data.SQLite.csproj.AssemblyReference.cache
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\obj\Debug\net6.0\DataBaseOperator.DAL.Data.SQLite.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\obj\Debug\net6.0\DataBaseOperator.DAL.Data.SQLite.AssemblyInfoInputs.cache
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\obj\Debug\net6.0\DataBaseOperator.DAL.Data.SQLite.AssemblyInfo.cs
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\obj\Debug\net6.0\DataBaseOperator.DAL.Data.SQLite.csproj.CoreCompileInputs.cache
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\obj\Debug\net6.0\DataBaseOperator.DAL.Data.SQLite.dll
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\obj\Debug\net6.0\ref\DataBaseOperator.DAL.Data.SQLite.dll
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\obj\Debug\net6.0\DataBaseOperator.DAL.Data.SQLite.pdb

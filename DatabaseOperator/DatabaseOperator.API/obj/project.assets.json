@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "DataBaseOperator.DAL.Data.SQLite/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DataBaseOperator.DAL.Data.SQLite.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataBaseOperator.DAL.Data.SQLite.dll": {}
+        }
+      },
+      "DataBaseOperator.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DataBaseOperator.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataBaseOperator.Domain.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DataBaseOperator.DAL.Data.SQLite/1.0.0": {
+      "type": "project",
+      "path": "../DataBaseOperator.DAL.Data.SQLite/DataBaseOperator.DAL.Data.SQLite.csproj",
+      "msbuildProject": "../DataBaseOperator.DAL.Data.SQLite/DataBaseOperator.DAL.Data.SQLite.csproj"
+    },
+    "DataBaseOperator.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../DataBaseOperator.Domain.Core/DataBaseOperator.Domain.Core.csproj",
+      "msbuildProject": "../DataBaseOperator.Domain.Core/DataBaseOperator.Domain.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "DataBaseOperator.DAL.Data.SQLite >= 1.0.0",
+      "DataBaseOperator.Domain.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Joe\\.nuget\\packages\\": {}
@@ -33,7 +68,14 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\ProgramData\\Projects\\DatabaseOperator.SQLite.EFCore\\DatabaseOperator\\DataBaseOperator.DAL.Data.SQLite\\DataBaseOperator.DAL.Data.SQLite.csproj": {
+              "projectPath": "D:\\ProgramData\\Projects\\DatabaseOperator.SQLite.EFCore\\DatabaseOperator\\DataBaseOperator.DAL.Data.SQLite\\DataBaseOperator.DAL.Data.SQLite.csproj"
+            },
+            "D:\\ProgramData\\Projects\\DatabaseOperator.SQLite.EFCore\\DatabaseOperator\\DataBaseOperator.Domain.Core\\DataBaseOperator.Domain.Core.csproj": {
+              "projectPath": "D:\\ProgramData\\Projects\\DatabaseOperator.SQLite.EFCore\\DatabaseOperator\\DataBaseOperator.Domain.Core\\DataBaseOperator.Domain.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

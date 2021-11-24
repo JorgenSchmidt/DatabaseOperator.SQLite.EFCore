@@ -20,3 +20,12 @@ D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\Database
 D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\DatabaseOperator.API.pdb
 D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\DatabaseOperator.API.genruntimeconfig.cache
 D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\bin\Debug\net6.0-windows\DataBaseOperator.DAL.Data.SQLite.dll
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\bin\Debug\net6.0-windows\DataBaseOperator.Domain.Core.dll
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\bin\Debug\net6.0-windows\DataBaseOperator.DAL.Data.SQLite.pdb
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\bin\Debug\net6.0-windows\DataBaseOperator.Domain.Core.pdb
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\DatabaseOperator.API.csproj.CopyComplete
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\ObjectInitializatorWindow.g.cs
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\ObjectInitializatorWindow.baml
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\ObjectUpdaterWindow.g.cs
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\ObjectUpdaterWindow.baml

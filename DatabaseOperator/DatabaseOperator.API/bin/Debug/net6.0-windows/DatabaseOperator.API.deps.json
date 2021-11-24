@@ -7,14 +7,38 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "DatabaseOperator.API/1.0.0": {
+        "dependencies": {
+          "DataBaseOperator.DAL.Data.SQLite": "1.0.0",
+          "DataBaseOperator.Domain.Core": "1.0.0"
+        },
         "runtime": {
           "DatabaseOperator.API.dll": {}
+        }
+      },
+      "DataBaseOperator.DAL.Data.SQLite/1.0.0": {
+        "runtime": {
+          "DataBaseOperator.DAL.Data.SQLite.dll": {}
+        }
+      },
+      "DataBaseOperator.Domain.Core/1.0.0": {
+        "runtime": {
+          "DataBaseOperator.Domain.Core.dll": {}
         }
       }
     }
   },
   "libraries": {
     "DatabaseOperator.API/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataBaseOperator.DAL.Data.SQLite/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataBaseOperator.Domain.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
