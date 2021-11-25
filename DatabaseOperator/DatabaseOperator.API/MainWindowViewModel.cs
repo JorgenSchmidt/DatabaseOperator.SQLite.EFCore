@@ -2,9 +2,6 @@
 
 using DataBaseOperator.Domain.Core;
 using DatabaseOperator.API.Services;
-using DatabaseOperator.API.ViewModels;
-using System.Windows;
-using DatabaseOperator.API.Views;
 
 namespace DatabaseOperator.API
 {
@@ -46,11 +43,11 @@ namespace DatabaseOperator.API
                 (
                     (obj) =>
                     {
-                        DialogWindowOperator.InitializeDialogWindow = new();
+                        DialogWindowOperator.InitializerDialogWindow = new();
 
-                        if (DialogWindowOperator.InitializeDialogWindow.ShowDialog() == true)
+                        if (DialogWindowOperator.InitializerDialogWindow.ShowDialog() == true)
                         {
-                            DialogWindowOperator.InitializeDialogWindow.Show();
+                            DialogWindowOperator.InitializerDialogWindow.Show();
                         }
                     }
                 );
@@ -65,11 +62,11 @@ namespace DatabaseOperator.API
                 (
                     (obj) =>
                     {
-                        DialogWindowOperator.UpdateDialogWindow = new();
+                        DialogWindowOperator.UpdaterDialogWindow = new();
                         
-                        if (DialogWindowOperator.UpdateDialogWindow.ShowDialog() == true)
+                        if (DialogWindowOperator.UpdaterDialogWindow.ShowDialog() == true)
                         {
-                            DialogWindowOperator.UpdateDialogWindow.Show();
+                            DialogWindowOperator.UpdaterDialogWindow.Show();
                         }
                     }
                 );
@@ -84,7 +81,12 @@ namespace DatabaseOperator.API
                 (
                     (obj) =>
                     {
+                        DialogWindowOperator.RemoverDialogWindow = new();
 
+                        if (DialogWindowOperator.RemoverDialogWindow.ShowDialog() == true) 
+                        {
+                            DialogWindowOperator.RemoverDialogWindow.Show();
+                        }
                     }
                 );
             }
@@ -116,7 +118,12 @@ namespace DatabaseOperator.API
                 (
                     (obj) =>
                     {
+                        DialogWindowOperator.IDSearcherDialogWindow = new();
 
+                        if (DialogWindowOperator.IDSearcherDialogWindow.ShowDialog() == true)
+                        {
+                            DialogWindowOperator.IDSearcherDialogWindow.Show();
+                        }
                     }
                 );
             }
@@ -130,7 +137,12 @@ namespace DatabaseOperator.API
                 (
                     (obj) =>
                     {
+                        DialogWindowOperator.NameSearcherDialogWindow = new();
 
+                        if (DialogWindowOperator.NameSearcherDialogWindow.ShowDialog() == true)
+                        {
+                            DialogWindowOperator.NameSearcherDialogWindow.Show();
+                        }
                     }
                 );
             }
@@ -144,7 +156,12 @@ namespace DatabaseOperator.API
                 (
                     (obj) =>
                     {
+                        DialogWindowOperator.BalanceSearcherDialogWindow = new();
 
+                        if (DialogWindowOperator.BalanceSearcherDialogWindow.ShowDialog() == true)
+                        {
+                            DialogWindowOperator.BalanceSearcherDialogWindow.ShowDialog();
+                        }
                     }
                 );
             }
@@ -158,7 +175,12 @@ namespace DatabaseOperator.API
                 (
                     (obj) =>
                     {
+                        DialogWindowOperator.QuantityPriceSearcherDialogWindow = new();
 
+                        if (DialogWindowOperator.QuantityPriceSearcherDialogWindow.ShowDialog() == true)
+                        {
+                            DialogWindowOperator.QuantityPriceSearcherDialogWindow.Show();
+                        }
                     }
                 );
             }
@@ -166,7 +188,7 @@ namespace DatabaseOperator.API
 
         #endregion
 
-        #region for integration and sorting data bases
+        #region for integration and sorting data bases inside
 
         public Command IntegrationToUserDb
         {

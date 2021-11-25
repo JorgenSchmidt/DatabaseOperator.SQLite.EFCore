@@ -1,0 +1,34 @@
+﻿<Window x:Class="DatabaseOperator.API.Views.SearcherByQuantityPriceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DatabaseOperator.API.ViewModels"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Title="Update" Height="295" Width="425" ResizeMode="NoResize">
+    <Window.DataContext>
+        <local:SearcherByQuantityPriceViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Rectangle Stroke="Black" Fill="LightGray"/>
+        
+        <Label   Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="155" Content="Quantity of product since: "/>
+        <TextBox Margin="10,35,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="19" Width="380" Text="{Binding QuantityOfProductSince}"/>
+        <Label   Margin="10,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="155" Content="Quantity of product until: "/>
+        <TextBox Margin="10,85,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="19" Width="380" Text="{Binding QuantityOfProductUntil}"/>
+        <Label   Margin="10,120,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="155" Content="Price of product since: "/>
+        <TextBox Margin="10,145,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="19" Width="380" Text="{Binding ProductPriceSince}"/>
+        <Label   Margin="10,170,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="155" Content="Price of product until: "/>
+        <TextBox Margin="10,195,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="19" Width="380" Text="{Binding ProductPriceUntil}"/>
+
+        <Button  Margin="260,235,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="60" Command="{Binding Search}">
+            <TextBlock TextAlignment="Center"> Search </TextBlock>
+        </Button>
+        <Button  Margin="330,235,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="60" Command="{Binding Close}">
+            <TextBlock TextAlignment="Center"> Canel</TextBlock>
+        </Button>
+
+    </Grid>
+</Window>

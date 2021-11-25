@@ -3,4 +3,9 @@
 FD:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\MainWindow.xaml;;
 FD:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\Views\ObjectInitializatorWindow.xaml;;
 FD:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\Views\ObjectUpdaterWindow.xaml;;
+FD:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\Views\ObjectRemoverWindow.xaml;;
+FD:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\Views\SearcherByIDWindow.xaml;;
+FD:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\Views\SearcherByNameWindow.xaml;;
+FD:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\Views\SearcherByQuantityPriceWindow.xaml;;
+FD:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\Views\SearcherByUserBalanceWindow.xaml;;
 

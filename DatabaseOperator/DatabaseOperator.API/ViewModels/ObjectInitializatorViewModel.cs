@@ -62,8 +62,8 @@ namespace DatabaseOperator.API.ViewModels
                 (
                     (obj) =>
                     {
-                        DialogWindowOperator.InitializeDialogWindow.Close();
-                        DialogWindowOperator.InitializeDialogWindow = null;
+                        DialogWindowOperator.InitializerDialogWindow.Close();
+                        DialogWindowOperator.InitializerDialogWindow = null;
                     }
                 );
             }
@@ -77,8 +77,8 @@ namespace DatabaseOperator.API.ViewModels
                 (
                     (obj) =>
                     {
-                        DialogWindowOperator.InitializeDialogWindow.Close();
-                        DialogWindowOperator.InitializeDialogWindow = null;
+                        DialogWindowOperator.InitializerDialogWindow.Close();
+                        DialogWindowOperator.InitializerDialogWindow = null;
                     }
                 );
             }

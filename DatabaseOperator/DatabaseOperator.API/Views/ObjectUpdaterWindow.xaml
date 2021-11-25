@@ -32,10 +32,10 @@
         <TextBox Margin="10,395,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="19" Width="380" Text="{Binding ProductPrice}"/>
 
         <Button  Margin="260,435,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="60" Command="{Binding Update}">
-            <TextBlock TextAlignment="Center"> Add</TextBlock>
+            <TextBlock TextAlignment="Center"> Update </TextBlock>
         </Button>
         <Button  Margin="330,435,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="60" Command="{Binding Close}">
-            <TextBlock TextAlignment="Center"> Canel</TextBlock>
+            <TextBlock TextAlignment="Center"> Canel </TextBlock>
         </Button>
     </Grid>
 </Window>

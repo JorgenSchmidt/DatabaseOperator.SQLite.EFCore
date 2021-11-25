@@ -29,3 +29,13 @@ D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\Database
 D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\ObjectInitializatorWindow.baml
 D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\ObjectUpdaterWindow.g.cs
 D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\ObjectUpdaterWindow.baml
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\ObjectRemoverWindow.g.cs
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\ObjectRemoverWindow.baml
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\SearcherByIDWindow.g.cs
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\SearcherByNameWindow.g.cs
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\SearcherByQuantityPriceWindow.g.cs
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\SearcherByUserBalanceWindow.g.cs
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\SearcherByIDWindow.baml
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\SearcherByNameWindow.baml
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\SearcherByQuantityPriceWindow.baml
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\SearcherByUserBalanceWindow.baml

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\App.xaml
-3761265163
+8-37522489
 
-12463574418
+22891412517
 196301277435
-MainWindow.xaml;Views\ObjectInitializatorWindow.xaml;Views\ObjectUpdaterWindow.xaml;
+MainWindow.xaml;Views\ObjectInitializatorWindow.xaml;Views\ObjectRemoverWindow.xaml;Views\ObjectUpdaterWindow.xaml;Views\SearcherByIDWindow.xaml;Views\SearcherByNameWindow.xaml;Views\SearcherByQuantityPriceWindow.xaml;Views\SearcherByUserBalanceWindow.xaml;
 
 False
 

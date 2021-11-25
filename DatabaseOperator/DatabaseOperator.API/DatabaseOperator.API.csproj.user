@@ -10,7 +10,22 @@
     <Compile Update="Views\ObjectInitializatorWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\ObjectRemoverWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\ObjectUpdaterWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SearcherByIDWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SearcherByNameWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SearcherByQuantityPriceWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SearcherByUserBalanceWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -21,7 +36,22 @@
     <Page Update="Views\ObjectInitializatorWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\ObjectRemoverWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\ObjectUpdaterWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SearcherByIDWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SearcherByNameWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SearcherByQuantityPriceWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SearcherByUserBalanceWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
