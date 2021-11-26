@@ -53,7 +53,7 @@ namespace DatabaseOperator.API.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DatabaseOperator.API;component/views/objectupdaterwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DatabaseOperator.API;V1.0.0.0;component/views/objectupdaterwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\ObjectUpdaterWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

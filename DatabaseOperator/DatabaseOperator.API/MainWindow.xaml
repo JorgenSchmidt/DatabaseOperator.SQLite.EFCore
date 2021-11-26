@@ -45,23 +45,23 @@
 
         <!-- For integration Databases by DataBase name-->
         <Button Command="{Binding IntegrationToUserDb}" Margin="10,95,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="270">
-            <TextBlock TextAlignment="Center"> Integrate to this data base</TextBlock>
+            <TextBlock TextAlignment="Center"> *Integrate to this data base</TextBlock>
         </Button>
         <Button Command="{Binding IntegrationToProductDb}" Margin="305,95,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="275">
-            <TextBlock TextAlignment="Center"> Integrate to this data base</TextBlock>
+            <TextBlock TextAlignment="Center"> *Integrate to this data base</TextBlock>
         </Button>
 
         <!-- For sort Databases -->
         <Button Command="{Binding SortUserDb}" Margin="10,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="270">
-            <TextBlock TextAlignment="Center"> Sorting this data base (full)</TextBlock>
+            <TextBlock TextAlignment="Center"> *Sorting this data base (full)</TextBlock>
         </Button>
         <Button Command="{Binding SortProductDb}" Margin="305,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="275">
-            <TextBlock TextAlignment="Center"> Sorting this data base (full)</TextBlock>
+            <TextBlock TextAlignment="Center"> *Sorting this data base (full)</TextBlock>
         </Button>
 
         <!-- ListViews -->
         <ListView ItemsSource="{Binding UserList}" Margin="10,210,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="400" Width="270">
-            <ListView.View>
+            <ListView.View HorizontalContentAlignment="Center"  VerticalContentAlignment="Center">
                 <GridView>
                     <GridViewColumn Header="User ID" Width="48" DisplayMemberBinding="{Binding ID}" />
                     <GridViewColumn Header="First Name" Width="75" DisplayMemberBinding="{Binding FirstName}"/>
@@ -71,7 +71,7 @@
             </ListView.View>
         </ListView>
         <ListView ItemsSource="{Binding ProductList}" Margin="305,210,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="400" Width="273">
-            <ListView.View>
+            <ListView.View HorizontalContentAlignment="Center"  VerticalContentAlignment="Center">
                 <GridView>
                     <GridViewColumn Header="Product ID" Width="65" DisplayMemberBinding="{Binding ID}"/>
                     <GridViewColumn Header="Product Name" Width="97" DisplayMemberBinding="{Binding Name}" />

@@ -69,6 +69,7 @@ namespace DatabaseOperator.API
                         {
                             DialogWindowOperator.UpdaterDialogWindow.Show();
                         }
+                        UserList = WindowInteractor.StaticUserList;
                     }
                 );
             }
@@ -88,6 +89,7 @@ namespace DatabaseOperator.API
                         {
                             DialogWindowOperator.RemoverDialogWindow.Show();
                         }
+                        UserList = WindowInteractor.StaticUserList;
                     }
                 );
             }
@@ -125,6 +127,7 @@ namespace DatabaseOperator.API
                         {
                             DialogWindowOperator.IDSearcherDialogWindow.Show();
                         }
+                        UserList = WindowInteractor.StaticUserList;
                     }
                 );
             }
@@ -144,6 +147,7 @@ namespace DatabaseOperator.API
                         {
                             DialogWindowOperator.NameSearcherDialogWindow.Show();
                         }
+                        UserList = WindowInteractor.StaticUserList;
                     }
                 );
             }
@@ -163,6 +167,7 @@ namespace DatabaseOperator.API
                         {
                             DialogWindowOperator.BalanceSearcherDialogWindow.ShowDialog();
                         }
+                        UserList = WindowInteractor.StaticUserList;
                     }
                 );
             }
@@ -182,6 +187,7 @@ namespace DatabaseOperator.API
                         {
                             DialogWindowOperator.QuantityPriceSearcherDialogWindow.Show();
                         }
+                        UserList = WindowInteractor.StaticUserList;
                     }
                 );
             }
