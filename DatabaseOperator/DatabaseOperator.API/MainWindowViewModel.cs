@@ -9,26 +9,26 @@ namespace DatabaseOperator.API
     {
 
         // For show getted objects
-        public List<User> userlist;
 
+        public List<User> userList;
         public List<User> UserList
         {
-            get { return userlist; }
-            set
-            {
-                userlist = value;
+            get { return userList; }
+            set 
+            { 
+                userList = value;
                 CheckChanges();
             }
         }
 
-        public List<Product> productlist;
+        public List<Product> productList;
 
         public List<Product> ProductList
         {
-            get { return productlist; }
+            get { return productList; }
             set
             {
-                productlist = value;
+                productList = value;
                 CheckChanges();
             }
         }
@@ -49,6 +49,7 @@ namespace DatabaseOperator.API
                         {
                             DialogWindowOperator.InitializerDialogWindow.Show();
                         }
+                        UserList = WindowInteractor.StaticUserList;
                     }
                 );
             }

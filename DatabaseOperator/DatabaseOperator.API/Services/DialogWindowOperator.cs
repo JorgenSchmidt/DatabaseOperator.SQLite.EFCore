@@ -1,5 +1,8 @@
 ﻿using System.Windows;
+using System.Collections.Generic;
+
 using DatabaseOperator.API.Views;
+using DataBaseOperator.Domain.Core;
 
 namespace DatabaseOperator.API.Services
 {
@@ -14,6 +17,5 @@ namespace DatabaseOperator.API.Services
         public static SearcherByNameWindow NameSearcherDialogWindow;
         public static SearcherByUserBalanceWindow BalanceSearcherDialogWindow;
         public static SearcherByQuantityPriceWindow QuantityPriceSearcherDialogWindow;
-
     }
 }

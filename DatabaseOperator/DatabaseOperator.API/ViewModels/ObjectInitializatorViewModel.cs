@@ -1,5 +1,6 @@
 ﻿using DatabaseOperator.API.Services;
-using DatabaseOperator.API.Views;
+using DataBaseOperator.Domain.Core;
+using System.Collections.Generic;
 
 namespace DatabaseOperator.API.ViewModels
 {
@@ -62,6 +63,7 @@ namespace DatabaseOperator.API.ViewModels
                 (
                     (obj) =>
                     {
+                        WindowInteractor.StaticUserList = new List<User> { new User { ID = "1", FirstName = FirstNameOfUser, SecondName = SecondNameOfUser, Balance = 0 } };
                         DialogWindowOperator.InitializerDialogWindow.Close();
                         DialogWindowOperator.InitializerDialogWindow = null;
                     }

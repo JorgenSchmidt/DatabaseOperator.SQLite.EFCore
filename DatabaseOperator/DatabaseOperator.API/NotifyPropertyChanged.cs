@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace DatabaseOperator.API
 {
-    public abstract class NotifyPropertyChanged : INotifyPropertyChanged
+    public class NotifyPropertyChanged : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -11,5 +11,6 @@ namespace DatabaseOperator.API
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(property));
         }
+
     }
 }
