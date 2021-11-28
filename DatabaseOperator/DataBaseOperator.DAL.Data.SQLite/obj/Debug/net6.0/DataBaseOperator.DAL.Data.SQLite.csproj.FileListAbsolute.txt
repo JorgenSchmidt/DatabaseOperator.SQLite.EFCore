@@ -10,3 +10,6 @@ D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBase
 D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\obj\Debug\net6.0\DataBaseOperator.DAL.Data.SQLite.dll
 D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\obj\Debug\net6.0\ref\DataBaseOperator.DAL.Data.SQLite.dll
 D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\obj\Debug\net6.0\DataBaseOperator.DAL.Data.SQLite.pdb
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\bin\Debug\net6.0\DataBaseOperator.Domain.Core.dll
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\bin\Debug\net6.0\DataBaseOperator.Domain.Core.pdb
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DataBaseOperator.DAL.Data.SQLite\obj\Debug\net6.0\DataBaseOperator.DAL.Data.SQLite.csproj.CopyComplete

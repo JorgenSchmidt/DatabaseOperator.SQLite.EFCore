@@ -61,7 +61,7 @@
 
         <!-- ListViews -->
         <ListView ItemsSource="{Binding UserList}" Margin="10,210,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="400" Width="270">
-            <ListView.View HorizontalContentAlignment="Center"  VerticalContentAlignment="Center">
+            <ListView.View>
                 <GridView>
                     <GridViewColumn Header="User ID" Width="48" DisplayMemberBinding="{Binding ID}" />
                     <GridViewColumn Header="First Name" Width="75" DisplayMemberBinding="{Binding FirstName}"/>
@@ -71,7 +71,7 @@
             </ListView.View>
         </ListView>
         <ListView ItemsSource="{Binding ProductList}" Margin="305,210,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="400" Width="273">
-            <ListView.View HorizontalContentAlignment="Center"  VerticalContentAlignment="Center">
+            <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Product ID" Width="65" DisplayMemberBinding="{Binding ID}"/>
                     <GridViewColumn Header="Product Name" Width="97" DisplayMemberBinding="{Binding Name}" />

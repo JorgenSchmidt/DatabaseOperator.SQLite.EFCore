@@ -1,4 +1,6 @@
-﻿using DatabaseOperator.API.Services;
+﻿using System.Windows;
+
+using DatabaseOperator.API.Services;
 
 namespace DatabaseOperator.API.ViewModels
 {
@@ -35,8 +37,17 @@ namespace DatabaseOperator.API.ViewModels
                 (
                     (obj) =>
                     {
-                        DialogWindowOperator.BalanceSearcherDialogWindow.Close();
-                        DialogWindowOperator.BalanceSearcherDialogWindow = null;
+                        if (UserBalanceSince > 0 && UserBalanceUntil > 0 && UserBalanceSince <= UserBalanceUntil)
+                        {
+                            //WindowInteractor.StaticUserList = DataBaseInteractor.SearchUserByBalance(UserBalanceSince, UserBalanceUntil);
+
+                            DialogWindowOperator.BalanceSearcherDialogWindow.Close();
+                            DialogWindowOperator.BalanceSearcherDialogWindow = null;
+                        }
+                        else
+                        {
+                            MessageBox.Show("You have to write the lower and upper bounds of the range.", "Error!");
+                        }
                     }
                 );
             }

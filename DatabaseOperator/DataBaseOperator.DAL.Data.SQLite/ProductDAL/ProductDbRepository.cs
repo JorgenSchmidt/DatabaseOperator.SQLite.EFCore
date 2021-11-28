@@ -7,6 +7,8 @@ namespace DataBaseOperator.DAL.Data.SQLite.ProductDAL
     public class ProductDbRepository : IProductService
     {
 
+        public static IProductService Instance = new ProductDbRepository();
+
         #region CRUD operations
 
         // For add target object in data base
@@ -39,7 +41,7 @@ namespace DataBaseOperator.DAL.Data.SQLite.ProductDAL
                 {
                     if (!String.IsNullOrEmpty(_name)) curUser.Name = _name;
                     curUser.Quantity += _quantity;
-                    curUser.Price = _price;
+                    if (_price != 0) curUser.Price = _price;
                     db.Products.Update(curUser);
                     break;
                 }

@@ -12,8 +12,8 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\App.xaml
 8-37522489
 
-22891412517
-196301277435
+24-1537949386
+214-500562665
 MainWindow.xaml;Views\ObjectInitializatorWindow.xaml;Views\ObjectRemoverWindow.xaml;Views\ObjectUpdaterWindow.xaml;Views\SearcherByIDWindow.xaml;Views\SearcherByNameWindow.xaml;Views\SearcherByQuantityPriceWindow.xaml;Views\SearcherByUserBalanceWindow.xaml;
 
 False

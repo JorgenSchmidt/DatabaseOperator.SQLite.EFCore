@@ -7,6 +7,8 @@ namespace DataBaseOperator.DAL.Data.SQLite.UserDAL
     public class UserDbRepository : IUserService
     {
 
+        public static readonly IUserService Instance = new UserDbRepository();
+
         #region CRUD operations
 
         // For add target object in data base
@@ -80,7 +82,6 @@ namespace DataBaseOperator.DAL.Data.SQLite.UserDAL
         #endregion
 
         #region Search operations
-
 
         List<User> IUserService.SearchUserByID(string _id)
         {

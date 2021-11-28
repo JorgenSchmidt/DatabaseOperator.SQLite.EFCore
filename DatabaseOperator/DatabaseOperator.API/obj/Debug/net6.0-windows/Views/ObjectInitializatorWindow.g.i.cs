@@ -9,7 +9,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using DatabaseOperator.API;
 using DatabaseOperator.API.ViewModels;
 using System;
 using System.Diagnostics;
@@ -54,7 +53,7 @@ namespace DatabaseOperator.API.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DatabaseOperator.API;V1.0.0.0;component/views/objectinitializatorwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DatabaseOperator.API;component/views/objectinitializatorwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\ObjectInitializatorWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

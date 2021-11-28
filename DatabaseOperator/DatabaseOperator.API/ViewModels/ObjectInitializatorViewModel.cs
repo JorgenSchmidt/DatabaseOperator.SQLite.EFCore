@@ -1,6 +1,7 @@
-﻿using DatabaseOperator.API.Services;
-using DataBaseOperator.Domain.Core;
-using System.Collections.Generic;
+﻿using System;
+using System.Windows;
+
+using DatabaseOperator.API.Services;
 
 namespace DatabaseOperator.API.ViewModels
 {
@@ -63,8 +64,39 @@ namespace DatabaseOperator.API.ViewModels
                 (
                     (obj) =>
                     {
-                        DialogWindowOperator.InitializerDialogWindow.Close();
-                        DialogWindowOperator.InitializerDialogWindow = null;
+                        // IF
+                        if 
+                        (!String.IsNullOrEmpty(FirstNameOfUser) && !String.IsNullOrEmpty(SecondNameOfUser)
+                        &&
+                        String.IsNullOrEmpty(NameOfProduct) && PriceOfProduct == 0
+                        )
+
+                        // THEN
+                        {
+                            //WindowInteractor.StaticUserList = DataBaseInteractor.AddUser(FirstNameOfUser, SecondNameOfUser);
+
+                            DialogWindowOperator.InitializerDialogWindow.Close();
+                            DialogWindowOperator.InitializerDialogWindow = null;
+                        }
+
+                        // ELSE IF
+                        else if
+                        (String.IsNullOrEmpty(FirstNameOfUser) && String.IsNullOrEmpty(SecondNameOfUser)
+                        &&
+                        !String.IsNullOrEmpty(NameOfProduct) && PriceOfProduct != 0)
+
+                        // THEN
+                        {
+                            //WindowInteractor.StaticProductList = DataBaseInteractor.AddProduct(NameOfProduct, PriceOfProduct);
+
+                            DialogWindowOperator.InitializerDialogWindow.Close();
+                            DialogWindowOperator.InitializerDialogWindow = null;
+                        }
+                        else
+                        {
+                            MessageBox.Show("You have to write information about user OR product.","Error!");
+                        }
+
                     }
                 );
             }

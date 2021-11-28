@@ -1,4 +1,7 @@
-﻿using DatabaseOperator.API.Services;
+﻿using System;
+using System.Windows;
+
+using DatabaseOperator.API.Services;
 
 namespace DatabaseOperator.API.ViewModels
 {
@@ -46,8 +49,24 @@ namespace DatabaseOperator.API.ViewModels
                 (
                     (obj) =>
                     {
-                        DialogWindowOperator.NameSearcherDialogWindow.Close();
-                        DialogWindowOperator.NameSearcherDialogWindow = null;
+                        if (!String.IsNullOrEmpty(FirstNameOfUser) && !String.IsNullOrEmpty(SecondNameOfUser) && String.IsNullOrEmpty(ProductName))
+                        {
+                            //WindowInteractor.StaticUserList = DataBaseInteractor.SearchUserByName(FirstNameOfUser, SecondNameOfUser);
+
+                            DialogWindowOperator.NameSearcherDialogWindow.Close();
+                            DialogWindowOperator.NameSearcherDialogWindow = null;
+                        }
+                        else if (String.IsNullOrEmpty(FirstNameOfUser) && String.IsNullOrEmpty(SecondNameOfUser) && !String.IsNullOrEmpty(ProductName))
+                        {
+                            //WindowInteractor.StaticProductList = DataBaseInteractor.SearchProductByName(ProductName);
+
+                            DialogWindowOperator.NameSearcherDialogWindow.Close();
+                            DialogWindowOperator.NameSearcherDialogWindow = null;
+                        }
+                        else
+                        {
+                            MessageBox.Show("You have to write information about user or product", "Error!");
+                        }
                     }
                 );
             }

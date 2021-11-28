@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseOperator.API", "DatabaseOperator.API\DatabaseOperator.API.csproj", "{02E15F01-8A9F-4E04-B255-73D0EF1665BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabaseOperator.API", "DatabaseOperator.API\DatabaseOperator.API.csproj", "{02E15F01-8A9F-4E04-B255-73D0EF1665BC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{DDF9412A-D4AE-473A-B97C-B5D4AEEE4242}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseOperator.Domain.Core", "DataBaseOperator.Domain.Core\DataBaseOperator.Domain.Core.csproj", "{4A663263-AEBB-44FD-B1CA-A1B53B271D5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBaseOperator.Domain.Core", "DataBaseOperator.Domain.Core\DataBaseOperator.Domain.Core.csproj", "{4A663263-AEBB-44FD-B1CA-A1B53B271D5A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{EA628499-70C2-4B02-AE96-898A188BBD59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseOperator.DAL.Data.SQLite", "DataBaseOperator.DAL.Data.SQLite\DataBaseOperator.DAL.Data.SQLite.csproj", "{16100FC3-057B-4858-B44D-1E2F2CDF2E3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBaseOperator.DAL.Data.SQLite", "DataBaseOperator.DAL.Data.SQLite\DataBaseOperator.DAL.Data.SQLite.csproj", "{16100FC3-057B-4858-B44D-1E2F2CDF2E3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALTests", "DALTests\DALTests.csproj", "{F17B67FE-B294-48FB-B88B-A1E651FE9DD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{16100FC3-057B-4858-B44D-1E2F2CDF2E3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16100FC3-057B-4858-B44D-1E2F2CDF2E3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16100FC3-057B-4858-B44D-1E2F2CDF2E3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F17B67FE-B294-48FB-B88B-A1E651FE9DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17B67FE-B294-48FB-B88B-A1E651FE9DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17B67FE-B294-48FB-B88B-A1E651FE9DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17B67FE-B294-48FB-B88B-A1E651FE9DD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4A663263-AEBB-44FD-B1CA-A1B53B271D5A} = {DDF9412A-D4AE-473A-B97C-B5D4AEEE4242}
 		{16100FC3-057B-4858-B44D-1E2F2CDF2E3F} = {EA628499-70C2-4B02-AE96-898A188BBD59}
+		{F17B67FE-B294-48FB-B88B-A1E651FE9DD6} = {EA628499-70C2-4B02-AE96-898A188BBD59}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B61EB2D-C235-41CB-9423-A01C5F0BC4E7}

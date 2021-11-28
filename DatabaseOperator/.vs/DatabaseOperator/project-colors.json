@@ -35,7 +35,37 @@
       "ProjectGuid": "16100fc3-057b-4858-b44d-1e2f2cdf2e3f",
       "DisplayName": "DataBaseOperator.DAL.Data.SQLite",
       "ColorIndex": 6
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "f17b67fe-b294-48fb-b88b-a1e651fe9dd6": {
+      "ProjectGuid": "f17b67fe-b294-48fb-b88b-a1e651fe9dd6",
+      "DisplayName": "DALTests",
+      "ColorIndex": 7
+    },
+    "7f6d4209-5cdd-445b-89b5-d5e8133dbf30": {
+      "ProjectGuid": "7f6d4209-5cdd-445b-89b5-d5e8133dbf30",
+      "DisplayName": "APITests",
+      "ColorIndex": 8
+    },
+    "ffa41fb4-e4c1-4453-9d87-5ea22c13be7d": {
+      "ProjectGuid": "ffa41fb4-e4c1-4453-9d87-5ea22c13be7d",
+      "DisplayName": "APITests",
+      "ColorIndex": 9
+    },
+    "be47d8f1-9d0e-4881-a08d-89381a73b6bd": {
+      "ProjectGuid": "be47d8f1-9d0e-4881-a08d-89381a73b6bd",
+      "DisplayName": "APITests",
+      "ColorIndex": 10
+    },
+    "d1bd201b-4f32-40f8-8768-2a23fefa1a96": {
+      "ProjectGuid": "d1bd201b-4f32-40f8-8768-2a23fefa1a96",
+      "DisplayName": "APITests",
+      "ColorIndex": 11
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 12
 }

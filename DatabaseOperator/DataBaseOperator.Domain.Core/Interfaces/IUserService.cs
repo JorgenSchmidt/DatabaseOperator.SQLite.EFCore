@@ -2,6 +2,7 @@
 {
     public interface IUserService
     {
+
         List<User> AddUser(string _firstname, string _secondname);
         List<User> UpdateUser(string _id, string _firstname, string _secondname, int _balance);
         List<User> DeleteUser(string _id);

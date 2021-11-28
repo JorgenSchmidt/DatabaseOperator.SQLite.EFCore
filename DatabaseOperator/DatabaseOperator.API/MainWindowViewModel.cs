@@ -50,6 +50,7 @@ namespace DatabaseOperator.API
                             DialogWindowOperator.InitializerDialogWindow.Show();
                         }
                         UserList = WindowInteractor.StaticUserList;
+                        ProductList = WindowInteractor.StaticProductList;
                     }
                 );
             }
@@ -70,6 +71,7 @@ namespace DatabaseOperator.API
                             DialogWindowOperator.UpdaterDialogWindow.Show();
                         }
                         UserList = WindowInteractor.StaticUserList;
+                        ProductList = WindowInteractor.StaticProductList;
                     }
                 );
             }
@@ -90,6 +92,7 @@ namespace DatabaseOperator.API
                             DialogWindowOperator.RemoverDialogWindow.Show();
                         }
                         UserList = WindowInteractor.StaticUserList;
+                        ProductList = WindowInteractor.StaticProductList;
                     }
                 );
             }
@@ -128,6 +131,7 @@ namespace DatabaseOperator.API
                             DialogWindowOperator.IDSearcherDialogWindow.Show();
                         }
                         UserList = WindowInteractor.StaticUserList;
+                        ProductList = WindowInteractor.StaticProductList;
                     }
                 );
             }
@@ -148,6 +152,7 @@ namespace DatabaseOperator.API
                             DialogWindowOperator.NameSearcherDialogWindow.Show();
                         }
                         UserList = WindowInteractor.StaticUserList;
+                        ProductList = WindowInteractor.StaticProductList;
                     }
                 );
             }
@@ -168,6 +173,7 @@ namespace DatabaseOperator.API
                             DialogWindowOperator.BalanceSearcherDialogWindow.ShowDialog();
                         }
                         UserList = WindowInteractor.StaticUserList;
+                        ProductList = WindowInteractor.StaticProductList;
                     }
                 );
             }
@@ -188,6 +194,7 @@ namespace DatabaseOperator.API
                             DialogWindowOperator.QuantityPriceSearcherDialogWindow.Show();
                         }
                         UserList = WindowInteractor.StaticUserList;
+                        ProductList = WindowInteractor.StaticProductList;
                     }
                 );
             }

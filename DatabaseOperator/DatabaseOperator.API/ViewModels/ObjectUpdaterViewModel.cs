@@ -1,4 +1,7 @@
-﻿using DatabaseOperator.API.Services;
+﻿using System;
+using System.Windows;
+
+using DatabaseOperator.API.Services;
 
 namespace DatabaseOperator.API.ViewModels
 {
@@ -106,8 +109,28 @@ namespace DatabaseOperator.API.ViewModels
                 (
                     (obj) =>
                     {
-                        DialogWindowOperator.UpdaterDialogWindow.Close();
-                        DialogWindowOperator.UpdaterDialogWindow = null;
+                        if 
+                        (!String.IsNullOrEmpty(UserID) && (!String.IsNullOrEmpty(FirstNameOfUser) || !String.IsNullOrEmpty(SecondNameOfUser) || UserBalance != 0) 
+                        && String.IsNullOrEmpty(ProductID) && String.IsNullOrEmpty(ProductName) && QuantityOfProduct == 0 && ProductPrice == 0)
+                        {
+                            //WindowInteractor.StaticUserList = DataBaseInteractor.UpdateUser(UserID, FirstNameOfUser, SecondNameOfUser, UserBalance);
+
+                            DialogWindowOperator.UpdaterDialogWindow.Close();
+                            DialogWindowOperator.UpdaterDialogWindow = null;
+                        }
+                        else if
+                        (String.IsNullOrEmpty(UserID) && String.IsNullOrEmpty(FirstNameOfUser) && String.IsNullOrEmpty(SecondNameOfUser) && UserBalance == 0
+                        && !String.IsNullOrEmpty(ProductID) && (!String.IsNullOrEmpty(ProductName) || QuantityOfProduct != 0 || ProductPrice != 0))
+                        {
+                            //WindowInteractor.StaticProductList = DataBaseInteractor.UpdateProduct(ProductID, ProductName, QuantityOfProduct, ProductPrice);
+
+                            DialogWindowOperator.UpdaterDialogWindow.Close();
+                            DialogWindowOperator.UpdaterDialogWindow = null;
+                        }
+                        else
+                        {
+                            MessageBox.Show("You have to write ID and at least one point of information for update (user OR product). .", "Error!");
+                        }
                     }
                 );
             }

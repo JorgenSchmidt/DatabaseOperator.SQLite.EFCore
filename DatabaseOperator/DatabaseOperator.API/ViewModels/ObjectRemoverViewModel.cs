@@ -1,4 +1,7 @@
-﻿using DatabaseOperator.API.Services;
+﻿using System;
+using System.Windows;
+
+using DatabaseOperator.API.Services;
 
 namespace DatabaseOperator.API.ViewModels
 {
@@ -34,8 +37,29 @@ namespace DatabaseOperator.API.ViewModels
                 (
                     (obj) =>
                     {
-                        DialogWindowOperator.RemoverDialogWindow.Close();
-                        DialogWindowOperator.RemoverDialogWindow = null;
+                        if 
+                        (!String.IsNullOrEmpty(userID) 
+                        && String.IsNullOrEmpty(productID))
+                        {
+                            //WindowInteractor.StaticUserList = DataBaseInteractor.DeleteUser(UserID);
+
+                            DialogWindowOperator.RemoverDialogWindow.Close();
+                            DialogWindowOperator.RemoverDialogWindow = null;
+                        }
+                        else if
+                        (String.IsNullOrEmpty(userID)
+                        && !String.IsNullOrEmpty(productID))
+                        {
+                            //WindowInteractor.StaticProductList = DataBaseInteractor.DeleteProduct(ProductID);
+
+                            DialogWindowOperator.RemoverDialogWindow.Close();
+                            DialogWindowOperator.RemoverDialogWindow = null;
+                        }
+                        else
+                        {
+                            MessageBox.Show("You have to write user or product ID", "Error!");
+                        }
+
                     }
                 );
             }

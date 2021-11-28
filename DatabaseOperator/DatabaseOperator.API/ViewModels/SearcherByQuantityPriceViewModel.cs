@@ -1,4 +1,6 @@
-﻿using DatabaseOperator.API.Services;
+﻿using System.Windows;
+
+using DatabaseOperator.API.Services;
 
 namespace DatabaseOperator.API.ViewModels
 {
@@ -57,8 +59,25 @@ namespace DatabaseOperator.API.ViewModels
                 (
                     (obj) =>
                     {
-                        DialogWindowOperator.QuantityPriceSearcherDialogWindow.Close();
-                        DialogWindowOperator.QuantityPriceSearcherDialogWindow = null;
+                        if (QuantityOfProductSince != 0 && QuantityOfProductUntil != 0 && ProductPriceSince == 0 && ProductPriceUntil == 0)
+                        {
+                            //WindowInteractor.StaticProductList = DataBaseInteractor.SearchProductByQuantity(QuantityOfProductSince, ProductPriceUntil);
+
+                            DialogWindowOperator.QuantityPriceSearcherDialogWindow.Close();
+                            DialogWindowOperator.QuantityPriceSearcherDialogWindow = null;
+                        }
+                        else if (QuantityOfProductSince == 0 && QuantityOfProductUntil == 0 && ProductPriceSince != 0 && ProductPriceUntil != 0)
+                        {
+                            //WindowInteractor.StaticProductList = DataBaseInteractor.SearchProductByPrice(ProductPriceSince, ProductPriceUntil);
+
+                            DialogWindowOperator.QuantityPriceSearcherDialogWindow.Close();
+                            DialogWindowOperator.QuantityPriceSearcherDialogWindow = null;
+                        }
+                        else
+                        {
+                            MessageBox.Show("You have to write quantity or price.", "Error");
+                        }
+
                     }
                 );
             }
