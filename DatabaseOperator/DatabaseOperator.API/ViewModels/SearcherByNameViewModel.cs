@@ -2,6 +2,7 @@
 using System.Windows;
 
 using DatabaseOperator.API.Services;
+using DataBaseOperator.DAL.Data.SQLite.Services;
 
 namespace DatabaseOperator.API.ViewModels
 {
@@ -49,16 +50,29 @@ namespace DatabaseOperator.API.ViewModels
                 (
                     (obj) =>
                     {
-                        if (!String.IsNullOrEmpty(FirstNameOfUser) && !String.IsNullOrEmpty(SecondNameOfUser) && String.IsNullOrEmpty(ProductName))
+
+                        // method of create bool expressions - 1st main line - checking for empty prop-s, 2nd main line - checking input for adecvacy
+                        // main line depends on with what object type we have to interaction
+                        
+                        if (!String.IsNullOrEmpty(FirstNameOfUser) && !String.IsNullOrEmpty(SecondNameOfUser) 
+                        && 
+                        DbMethods.IsAWord(FirstNameOfUser) && DbMethods.IsAWord(SecondNameOfUser)
+                        && 
+                        String.IsNullOrEmpty(ProductName))
                         {
-                            //WindowInteractor.StaticUserList = DataBaseInteractor.SearchUserByName(FirstNameOfUser, SecondNameOfUser);
+                            WindowInteractor.StaticUserList = DataBaseInteractor.SearchUserByName(FirstNameOfUser, SecondNameOfUser);
 
                             DialogWindowOperator.NameSearcherDialogWindow.Close();
                             DialogWindowOperator.NameSearcherDialogWindow = null;
                         }
-                        else if (String.IsNullOrEmpty(FirstNameOfUser) && String.IsNullOrEmpty(SecondNameOfUser) && !String.IsNullOrEmpty(ProductName))
+                        else if (
+                        String.IsNullOrEmpty(FirstNameOfUser) && String.IsNullOrEmpty(SecondNameOfUser) 
+                        && 
+                        !String.IsNullOrEmpty(ProductName)
+                        && 
+                        DbMethods.IsAWord(ProductName))
                         {
-                            //WindowInteractor.StaticProductList = DataBaseInteractor.SearchProductByName(ProductName);
+                            WindowInteractor.StaticProductList = DataBaseInteractor.SearchProductByName(ProductName);
 
                             DialogWindowOperator.NameSearcherDialogWindow.Close();
                             DialogWindowOperator.NameSearcherDialogWindow = null;

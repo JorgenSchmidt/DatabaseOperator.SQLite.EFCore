@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-using DataBaseOperator.Domain.Core;
+﻿using DataBaseOperator.Domain.Core;
 
 namespace DataBaseOperator.DAL.Data.SQLite.Services
 {
@@ -77,6 +74,18 @@ namespace DataBaseOperator.DAL.Data.SQLite.Services
             foreach (char curSym in _input)
             {
                 if (!Char.IsDigit(curSym)) return false;
+            }
+
+            return true;
+        }
+
+        public static bool IsAWord(string _input)
+        {
+            if (String.IsNullOrEmpty(_input)) return false;
+
+            foreach (char curSym in _input)
+            {
+                if (!Char.IsLetter(curSym)) return false;
             }
 
             return true;

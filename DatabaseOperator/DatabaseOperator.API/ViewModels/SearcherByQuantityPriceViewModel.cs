@@ -59,16 +59,16 @@ namespace DatabaseOperator.API.ViewModels
                 (
                     (obj) =>
                     {
-                        if (QuantityOfProductSince != 0 && QuantityOfProductUntil != 0 && ProductPriceSince == 0 && ProductPriceUntil == 0)
+                        if (QuantityOfProductSince < QuantityOfProductUntil && QuantityOfProductSince > 0 && QuantityOfProductUntil > 0 && ProductPriceSince == 0 && ProductPriceUntil == 0)
                         {
-                            //WindowInteractor.StaticProductList = DataBaseInteractor.SearchProductByQuantity(QuantityOfProductSince, ProductPriceUntil);
+                            WindowInteractor.StaticProductList = DataBaseInteractor.SearchProductByQuantity(QuantityOfProductSince, ProductPriceUntil);
 
                             DialogWindowOperator.QuantityPriceSearcherDialogWindow.Close();
                             DialogWindowOperator.QuantityPriceSearcherDialogWindow = null;
                         }
-                        else if (QuantityOfProductSince == 0 && QuantityOfProductUntil == 0 && ProductPriceSince != 0 && ProductPriceUntil != 0)
+                        else if (ProductPriceSince < productPriceUntil && QuantityOfProductSince == 0 && QuantityOfProductUntil == 0 && ProductPriceSince > 0 && ProductPriceUntil > 0)
                         {
-                            //WindowInteractor.StaticProductList = DataBaseInteractor.SearchProductByPrice(ProductPriceSince, ProductPriceUntil);
+                            WindowInteractor.StaticProductList = DataBaseInteractor.SearchProductByPrice(ProductPriceSince, ProductPriceUntil);
 
                             DialogWindowOperator.QuantityPriceSearcherDialogWindow.Close();
                             DialogWindowOperator.QuantityPriceSearcherDialogWindow = null;

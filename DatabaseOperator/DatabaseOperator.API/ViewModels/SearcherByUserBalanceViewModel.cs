@@ -39,7 +39,7 @@ namespace DatabaseOperator.API.ViewModels
                     {
                         if (UserBalanceSince > 0 && UserBalanceUntil > 0 && UserBalanceSince <= UserBalanceUntil)
                         {
-                            //WindowInteractor.StaticUserList = DataBaseInteractor.SearchUserByBalance(UserBalanceSince, UserBalanceUntil);
+                            WindowInteractor.StaticUserList = DataBaseInteractor.SearchUserByBalance(UserBalanceSince, UserBalanceUntil);
 
                             DialogWindowOperator.BalanceSearcherDialogWindow.Close();
                             DialogWindowOperator.BalanceSearcherDialogWindow = null;

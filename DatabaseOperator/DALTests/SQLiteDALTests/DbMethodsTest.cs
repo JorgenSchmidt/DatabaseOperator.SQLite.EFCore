@@ -170,5 +170,17 @@ namespace DALTests.SQLiteDALTests
             Assert.AreEqual(false, DbMethods.IsAIntNumber("12f"));
         }
 
+        [TestMethod]
+        public void IsAWordTest_01()
+        {
+            Assert.AreEqual(true, DbMethods.IsAWord("Abcdef"));
+        }
+
+        [TestMethod]
+        public void IsAWordTest_02()
+        {
+            Assert.AreEqual(false, DbMethods.IsAWord("Ab2cdef"));
+        }
+
     }
 }

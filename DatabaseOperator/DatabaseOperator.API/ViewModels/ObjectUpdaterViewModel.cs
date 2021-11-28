@@ -2,6 +2,7 @@
 using System.Windows;
 
 using DatabaseOperator.API.Services;
+using DataBaseOperator.DAL.Data.SQLite.Services;
 
 namespace DatabaseOperator.API.ViewModels
 {
@@ -109,27 +110,49 @@ namespace DatabaseOperator.API.ViewModels
                 (
                     (obj) =>
                     {
-                        if 
-                        (!String.IsNullOrEmpty(UserID) && (!String.IsNullOrEmpty(FirstNameOfUser) || !String.IsNullOrEmpty(SecondNameOfUser) || UserBalance != 0) 
-                        && String.IsNullOrEmpty(ProductID) && String.IsNullOrEmpty(ProductName) && QuantityOfProduct == 0 && ProductPrice == 0)
+
+                        // method of create bool expressions :
+                        // 1st line - checking for non-empty for target prop-s and input for adecvacy
+                        // 2nd line - checking for empty for opposite prop-s
+
+                        if
+
+                        // IF 
+
+                        // 1st line
+                        (!String.IsNullOrEmpty(UserID) && DbMethods.IsAIntNumber(UserID)
+                        && 
+                        (!String.IsNullOrEmpty(FirstNameOfUser) && DbMethods.IsAWord(FirstNameOfUser) || !String.IsNullOrEmpty(SecondNameOfUser) && DbMethods.IsAWord(SecondNameOfUser) || UserBalance > 0)
+                        &&
+                        // 2nd line
+                        String.IsNullOrEmpty(ProductID) && String.IsNullOrEmpty(ProductName) && QuantityOfProduct == 0 && ProductPrice == 0)
+                        
+                        // THEN
                         {
-                            //WindowInteractor.StaticUserList = DataBaseInteractor.UpdateUser(UserID, FirstNameOfUser, SecondNameOfUser, UserBalance);
+                            WindowInteractor.StaticUserList = DataBaseInteractor.UpdateUser(UserID, FirstNameOfUser, SecondNameOfUser, UserBalance);
 
                             DialogWindowOperator.UpdaterDialogWindow.Close();
                             DialogWindowOperator.UpdaterDialogWindow = null;
                         }
+
                         else if
-                        (String.IsNullOrEmpty(UserID) && String.IsNullOrEmpty(FirstNameOfUser) && String.IsNullOrEmpty(SecondNameOfUser) && UserBalance == 0
-                        && !String.IsNullOrEmpty(ProductID) && (!String.IsNullOrEmpty(ProductName) || QuantityOfProduct != 0 || ProductPrice != 0))
+                        
+                        // ELSE IF
+                        
+                        (!String.IsNullOrEmpty(ProductID) && DbMethods.IsAIntNumber(ProductID) && (!String.IsNullOrEmpty(ProductName) && DbMethods.IsAWord(ProductName) || QuantityOfProduct > 0 || ProductPrice > 0)
+                        &&
+                        String.IsNullOrEmpty(UserID) && String.IsNullOrEmpty(FirstNameOfUser) && String.IsNullOrEmpty(SecondNameOfUser) && UserBalance == 0)
+                        
+                        // THEN
                         {
-                            //WindowInteractor.StaticProductList = DataBaseInteractor.UpdateProduct(ProductID, ProductName, QuantityOfProduct, ProductPrice);
+                            WindowInteractor.StaticProductList = DataBaseInteractor.UpdateProduct(ProductID, ProductName, QuantityOfProduct, ProductPrice);
 
                             DialogWindowOperator.UpdaterDialogWindow.Close();
                             DialogWindowOperator.UpdaterDialogWindow = null;
                         }
                         else
                         {
-                            MessageBox.Show("You have to write ID and at least one point of information for update (user OR product). .", "Error!");
+                            MessageBox.Show("You have to write ID and at least one point of information for update (user OR product).", "Error!");
                         }
                     }
                 );

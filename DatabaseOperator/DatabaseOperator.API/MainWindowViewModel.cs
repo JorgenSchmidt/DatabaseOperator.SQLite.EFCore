@@ -106,8 +106,10 @@ namespace DatabaseOperator.API
                 (
                     (obj) =>
                     {
-                        UserList = DataBaseInteractor.ShowUserDataBase();
-                        ProductList = DataBaseInteractor.ShowProductDataBase();
+                        WindowInteractor.StaticUserList = DataBaseInteractor.ShowUserDataBase();
+                        WindowInteractor.StaticProductList = DataBaseInteractor.ShowProductDataBase();
+                        UserList = WindowInteractor.StaticUserList;
+                        ProductList = WindowInteractor.StaticProductList;
                     }
                 );
             }

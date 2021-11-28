@@ -2,6 +2,7 @@
 using System.Windows;
 
 using DatabaseOperator.API.Services;
+using DataBaseOperator.DAL.Data.SQLite.Services;
 
 namespace DatabaseOperator.API.ViewModels
 {
@@ -38,19 +39,19 @@ namespace DatabaseOperator.API.ViewModels
                     (obj) =>
                     {
                         if 
-                        (!String.IsNullOrEmpty(userID) 
-                        && String.IsNullOrEmpty(productID))
+                        (!String.IsNullOrEmpty(UserID) && DbMethods.IsAIntNumber(UserID)
+                        && String.IsNullOrEmpty(ProductID))
                         {
-                            //WindowInteractor.StaticUserList = DataBaseInteractor.DeleteUser(UserID);
+                            WindowInteractor.StaticUserList = DataBaseInteractor.DeleteUser(UserID);
 
                             DialogWindowOperator.RemoverDialogWindow.Close();
                             DialogWindowOperator.RemoverDialogWindow = null;
                         }
                         else if
-                        (String.IsNullOrEmpty(userID)
-                        && !String.IsNullOrEmpty(productID))
+                        (String.IsNullOrEmpty(UserID)
+                        && !String.IsNullOrEmpty(ProductID) && DbMethods.IsAIntNumber(ProductID))
                         {
-                            //WindowInteractor.StaticProductList = DataBaseInteractor.DeleteProduct(ProductID);
+                            WindowInteractor.StaticProductList = DataBaseInteractor.DeleteProduct(ProductID);
 
                             DialogWindowOperator.RemoverDialogWindow.Close();
                             DialogWindowOperator.RemoverDialogWindow = null;

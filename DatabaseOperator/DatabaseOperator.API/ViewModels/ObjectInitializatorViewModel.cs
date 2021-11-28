@@ -2,6 +2,7 @@
 using System.Windows;
 
 using DatabaseOperator.API.Services;
+using DataBaseOperator.DAL.Data.SQLite.Services;
 
 namespace DatabaseOperator.API.ViewModels
 {
@@ -64,30 +65,40 @@ namespace DatabaseOperator.API.ViewModels
                 (
                     (obj) =>
                     {
+                        
+                        // method of create bool expressions - 1st main line - checking for empty prop-s, 2nd main line - checking input for adecvacy
+                        // main line depends on with what object type we have to interaction
+
+                        if
+
                         // IF
-                        if 
                         (!String.IsNullOrEmpty(FirstNameOfUser) && !String.IsNullOrEmpty(SecondNameOfUser)
                         &&
-                        String.IsNullOrEmpty(NameOfProduct) && PriceOfProduct == 0
-                        )
+                        DbMethods.IsAWord(FirstNameOfUser) && DbMethods.IsAWord(SecondNameOfUser)
+                        &&
+                        String.IsNullOrEmpty(NameOfProduct) && PriceOfProduct == 0)
 
                         // THEN
                         {
-                            //WindowInteractor.StaticUserList = DataBaseInteractor.AddUser(FirstNameOfUser, SecondNameOfUser);
+                            WindowInteractor.StaticUserList = DataBaseInteractor.AddUser(FirstNameOfUser, SecondNameOfUser);
 
                             DialogWindowOperator.InitializerDialogWindow.Close();
                             DialogWindowOperator.InitializerDialogWindow = null;
                         }
 
-                        // ELSE IF
+                        
                         else if
+
+                        // ELSE IF
                         (String.IsNullOrEmpty(FirstNameOfUser) && String.IsNullOrEmpty(SecondNameOfUser)
                         &&
-                        !String.IsNullOrEmpty(NameOfProduct) && PriceOfProduct != 0)
+                        !String.IsNullOrEmpty(NameOfProduct) && PriceOfProduct > 0
+                        &&
+                        DbMethods.IsAWord(NameOfProduct))
 
                         // THEN
                         {
-                            //WindowInteractor.StaticProductList = DataBaseInteractor.AddProduct(NameOfProduct, PriceOfProduct);
+                            WindowInteractor.StaticProductList = DataBaseInteractor.AddProduct(NameOfProduct, PriceOfProduct);
 
                             DialogWindowOperator.InitializerDialogWindow.Close();
                             DialogWindowOperator.InitializerDialogWindow = null;
