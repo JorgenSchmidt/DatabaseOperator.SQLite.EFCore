@@ -47,6 +47,16 @@ namespace DatabaseOperator.API.Services
             return ProductDbRepository.Instance.DeleteProduct(_id);
         }
 
+        public static List<User> ShowUserDataBase ()
+        {
+            return UserDbRepository.Instance.GetUserDataBase();
+        }
+
+        public static List<Product> ShowProductDataBase()
+        {
+            return ProductDbRepository.Instance.GetProductDatabase();
+        }
+
         #endregion
 
         #region for Search operations

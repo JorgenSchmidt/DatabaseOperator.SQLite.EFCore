@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DatabaseOperator.API"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="SQL Operator" Height="670" Width="605" ResizeMode="NoResize">
+        Title="SQL Operator" Height="740" Width="605" ResizeMode="NoResize">
     <Window.DataContext>
         <local:MainWindowViewModel/>
     </Window.DataContext>
@@ -58,9 +58,12 @@
         <Button Command="{Binding SortProductDb}" Margin="305,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="275">
             <TextBlock TextAlignment="Center"> *Sorting this data base (full)</TextBlock>
         </Button>
+        <Button Command="{Binding PlaceAnOrder}" Margin="10,205,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="570">
+            <TextBlock TextAlignment="Center"> *Place an order </TextBlock>
+        </Button>
 
         <!-- ListViews -->
-        <ListView ItemsSource="{Binding UserList}" Margin="10,210,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="400" Width="270">
+        <ListView ItemsSource="{Binding UserList}" Margin="10,270,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="400" Width="270">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="User ID" Width="48" DisplayMemberBinding="{Binding ID}" />
@@ -70,7 +73,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <ListView ItemsSource="{Binding ProductList}" Margin="305,210,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="400" Width="273">
+        <ListView ItemsSource="{Binding ProductList}" Margin="305,270,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="400" Width="273">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Product ID" Width="65" DisplayMemberBinding="{Binding ID}"/>

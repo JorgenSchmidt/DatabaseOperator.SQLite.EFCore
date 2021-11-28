@@ -106,7 +106,8 @@ namespace DatabaseOperator.API
                 (
                     (obj) =>
                     {
-
+                        UserList = DataBaseInteractor.ShowUserDataBase();
+                        ProductList = DataBaseInteractor.ShowProductDataBase();
                     }
                 );
             }
@@ -247,6 +248,24 @@ namespace DatabaseOperator.API
         }
 
         public Command SortProductDb
+        {
+            get
+            {
+                return new Command
+                (
+                    (obj) =>
+                    {
+
+                    }
+                );
+            }
+        }
+
+        #endregion
+
+        #region for other operations 
+
+        public Command PlaceAnOrder
         {
             get
             {
