@@ -17,5 +17,7 @@ namespace DatabaseOperator.API.Services
         public static SearcherByNameWindow NameSearcherDialogWindow;
         public static SearcherByUserBalanceWindow BalanceSearcherDialogWindow;
         public static SearcherByQuantityPriceWindow QuantityPriceSearcherDialogWindow;
+
+        public static PlaceAnOrderWindow PlaceAnOrderDialogWindow;
     }
 }

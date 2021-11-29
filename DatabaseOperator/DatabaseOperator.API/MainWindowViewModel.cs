@@ -275,7 +275,13 @@ namespace DatabaseOperator.API
                 (
                     (obj) =>
                     {
-
+                        DialogWindowOperator.PlaceAnOrderDialogWindow = new();
+                        if (DialogWindowOperator.PlaceAnOrderDialogWindow.ShowDialog() == true)
+                        {
+                            DialogWindowOperator.PlaceAnOrderDialogWindow.Show();
+                        }
+                        UserList = WindowInteractor.StaticUserList;
+                        ProductList = WindowInteractor.StaticProductList;
                     }
                 );
             }

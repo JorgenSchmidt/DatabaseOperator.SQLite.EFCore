@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DatabaseOperator.API"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="SQL Operator" Height="740" Width="605" ResizeMode="NoResize">
+        Title="SQL Operator" Height="740" Width="780" ResizeMode="NoResize">
     <Window.DataContext>
         <local:MainWindowViewModel/>
     </Window.DataContext>
@@ -15,71 +15,71 @@
     <Grid>
         <!-- For change DataBases -->
         <Label Content="Operations for change DataBases:" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="189"/>
-        <Button Command="{Binding AddObject}" Margin="10,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="60">
+        <Button Command="{Binding AddObject}" Margin="10,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="80">
             <TextBlock TextAlignment="Center"> Add <LineBreak/> Object</TextBlock>
         </Button>
-        <Button Command="{Binding UpdateObject}" Margin="80,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="60">
+        <Button Command="{Binding UpdateObject}" Margin="100,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="80">
             <TextBlock TextAlignment="Center"> Update <LineBreak/> Object</TextBlock>
         </Button>
-        <Button Command="{Binding DeleteObject}" Margin="150,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="60">
+        <Button Command="{Binding DeleteObject}" Margin="190,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="80">
             <TextBlock TextAlignment="Center"> Delete <LineBreak/> Object</TextBlock>
         </Button>
-        <Button Command="{Binding ReadDataBase}" Margin="220,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="60">
+        <Button Command="{Binding ReadDataBase}" Margin="280,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="80">
             <TextBlock TextAlignment="Center"> Read <LineBreak/> DataBases</TextBlock>
         </Button>
 
         <!-- For Search Information in DataBases -->
-        <Label Content="Operations for search information in DataBases:" Margin="305,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="265"/>
-        <Button Command="{Binding SearchByID}" Margin="305,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="60">
+        <Label Content="Operations for search information in DataBases:" Margin="385,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="265"/>
+        <Button Command="{Binding SearchByID}" Margin="385,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="80">
             <TextBlock TextAlignment="Center"> Search <LineBreak/> by ID</TextBlock>
         </Button>
-        <Button Command="{Binding SearchByName}" Margin="375,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="60">
+        <Button Command="{Binding SearchByName}" Margin="475,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="80">
             <TextBlock TextAlignment="Center"> Search by <LineBreak/> Name</TextBlock>
         </Button>
-        <Button Command="{Binding SearchByUserBalance}" Margin="445,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="60">
+        <Button Command="{Binding SearchByUserBalance}" Margin="565,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="80">
             <TextBlock TextAlignment="Center"> Search us.<LineBreak/>by Balance</TextBlock>
         </Button>
-        <Button Command="{Binding SearchByProductQuantityOrPrice}" Margin="515,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="65">
+        <Button Command="{Binding SearchByProductQuantityOrPrice}" Margin="655,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="80">
             <TextBlock TextAlignment="Center"> Search pr. <LineBreak/> By Qt or Pr</TextBlock>
         </Button>
 
         <!-- For integration Databases by DataBase name-->
-        <Button Command="{Binding IntegrationToUserDb}" Margin="10,95,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="270">
+        <Button Command="{Binding IntegrationToUserDb}" Margin="10,95,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="350">
             <TextBlock TextAlignment="Center"> *Integrate to this data base</TextBlock>
         </Button>
-        <Button Command="{Binding IntegrationToProductDb}" Margin="305,95,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="275">
+        <Button Command="{Binding IntegrationToProductDb}" Margin="385,95,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="350">
             <TextBlock TextAlignment="Center"> *Integrate to this data base</TextBlock>
         </Button>
 
         <!-- For sort Databases -->
-        <Button Command="{Binding SortUserDb}" Margin="10,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="270">
+        <Button Command="{Binding SortUserDb}" Margin="10,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="350">
             <TextBlock TextAlignment="Center"> *Sorting this data base (full)</TextBlock>
         </Button>
-        <Button Command="{Binding SortProductDb}" Margin="305,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="275">
+        <Button Command="{Binding SortProductDb}" Margin="385,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="350">
             <TextBlock TextAlignment="Center"> *Sorting this data base (full)</TextBlock>
         </Button>
-        <Button Command="{Binding PlaceAnOrder}" Margin="10,205,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="570">
+        <Button Command="{Binding PlaceAnOrder}" Margin="10,205,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="725">
             <TextBlock TextAlignment="Center"> *Place an order </TextBlock>
         </Button>
 
         <!-- ListViews -->
-        <ListView ItemsSource="{Binding UserList}" Margin="10,270,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="400" Width="270">
+        <ListView ItemsSource="{Binding UserList}" Margin="10,270,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="400" Width="350">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="User ID" Width="48" DisplayMemberBinding="{Binding ID}" />
-                    <GridViewColumn Header="First Name" Width="75" DisplayMemberBinding="{Binding FirstName}"/>
-                    <GridViewColumn Header="Second Name" Width="85" DisplayMemberBinding="{Binding SecondName}"/>
-                    <GridViewColumn Header="Balance" Width="55" DisplayMemberBinding="{Binding Balance}"/>
+                    <GridViewColumn Header="First Name" Width="110" DisplayMemberBinding="{Binding FirstName}"/>
+                    <GridViewColumn Header="Second Name" Width="110" DisplayMemberBinding="{Binding SecondName}"/>
+                    <GridViewColumn Header="Balance" Width="75" DisplayMemberBinding="{Binding Balance}"/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <ListView ItemsSource="{Binding ProductList}" Margin="305,270,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="400" Width="273">
+        <ListView ItemsSource="{Binding ProductList}" Margin="385,270,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="400" Width="350">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Product ID" Width="65" DisplayMemberBinding="{Binding ID}"/>
-                    <GridViewColumn Header="Product Name" Width="97" DisplayMemberBinding="{Binding Name}" />
-                    <GridViewColumn Header="Quantity" Width="55" DisplayMemberBinding="{Binding Quantity}"/>
-                    <GridViewColumn Header="Price" Width="50" DisplayMemberBinding="{Binding Price}"/>
+                    <GridViewColumn Header="Product Name" Width="150" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Quantity" Width="62" DisplayMemberBinding="{Binding Quantity}"/>
+                    <GridViewColumn Header="Price" Width="70" DisplayMemberBinding="{Binding Price}"/>
                 </GridView>
             </ListView.View>
         </ListView>

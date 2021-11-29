@@ -72,3 +72,5 @@ D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\Database
 D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\bin\Debug\net6.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
 D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\bin\Debug\net6.0-windows\runtimes\win-x64\native\e_sqlite3.dll
 D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\bin\Debug\net6.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\PlaceAnOrderWindow.g.cs
+D:\ProgramData\Projects\DatabaseOperator.SQLite.EFCore\DatabaseOperator\DatabaseOperator.API\obj\Debug\net6.0-windows\Views\PlaceAnOrderWindow.baml

@@ -16,6 +16,9 @@
     <Compile Update="Views\ObjectUpdaterWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\PlaceAnOrderWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\SearcherByIDWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -40,6 +43,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\ObjectUpdaterWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PlaceAnOrderWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\SearcherByIDWindow.xaml">

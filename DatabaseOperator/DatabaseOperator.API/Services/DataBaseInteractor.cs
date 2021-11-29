@@ -105,7 +105,15 @@ namespace DatabaseOperator.API.Services
         }
 
         #endregion
-    
+
+        #region for other operations
+
+        public static void PlaceAnOrder()
+        {
+
+        }
+
+        #endregion
     }
 
 }
