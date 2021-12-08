@@ -41,7 +41,8 @@ namespace DatabaseOperator.API.ViewModels
                     {
 
                         if (!String.IsNullOrEmpty(UserID) && DbMethods.IsAIntNumber(UserID) 
-                        && String.IsNullOrEmpty(ProductID))
+                        && String.IsNullOrEmpty(ProductID) 
+                        && DbMethods.GetUserListLength() > Convert.ToInt32(UserID))
                         {
                             WindowInteractor.StaticUserList = DataBaseInteractor.SearchIDUser(UserID);
 
@@ -49,7 +50,8 @@ namespace DatabaseOperator.API.ViewModels
                             DialogWindowOperator.IDSearcherDialogWindow = null;
                         }
                         else if (String.IsNullOrEmpty(UserID) 
-                        && !String.IsNullOrEmpty(ProductID) && DbMethods.IsAIntNumber(ProductID))
+                        && !String.IsNullOrEmpty(ProductID) && DbMethods.IsAIntNumber(ProductID)
+                        && DbMethods.GetProductListLength() > Convert.ToInt32(ProductID))
                         {
                             WindowInteractor.StaticProductList = DataBaseInteractor.SearchIDProduct(ProductID);
 

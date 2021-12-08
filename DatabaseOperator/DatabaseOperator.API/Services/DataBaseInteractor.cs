@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-
 using DataBaseOperator.DAL.Data.SQLite.ProductDAL;
 using DataBaseOperator.DAL.Data.SQLite.UserDAL;
 using DataBaseOperator.Domain.Core;
@@ -108,9 +107,16 @@ namespace DatabaseOperator.API.Services
 
         #region for other operations
 
-        public static void PlaceAnOrder()
+        public static void PlaceAnOrder(User _targetUser, Product _targetProduct, int _quantityInOrder)
         {
+            WindowInteractor.StaticUserList =
+                UserDbRepository.Instance.UpdateUser
+                (_targetUser.ID, _targetUser.FirstName, _targetUser.SecondName, -1 *  _targetProduct.Price * _quantityInOrder);
 
+            WindowInteractor.StaticProductList =
+                ProductDbRepository.Instance.UpdateProduct
+                (_targetProduct.ID, _targetProduct.Name, -1 * _quantityInOrder, _targetProduct.Price);
+            
         }
 
         #endregion

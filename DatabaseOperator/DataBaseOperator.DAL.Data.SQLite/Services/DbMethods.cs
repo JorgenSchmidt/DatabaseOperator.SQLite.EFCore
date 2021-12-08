@@ -1,4 +1,6 @@
 ﻿using DataBaseOperator.Domain.Core;
+using DataBaseOperator.DAL.Data.SQLite.UserDAL;
+using DataBaseOperator.DAL.Data.SQLite.ProductDAL;
 
 namespace DataBaseOperator.DAL.Data.SQLite.Services
 {
@@ -79,6 +81,7 @@ namespace DataBaseOperator.DAL.Data.SQLite.Services
             return true;
         }
 
+        // for determining whether a string is a word (without numbers and special symbols)
         public static bool IsAWord(string _input)
         {
             if (String.IsNullOrEmpty(_input)) return false;
@@ -89,6 +92,18 @@ namespace DataBaseOperator.DAL.Data.SQLite.Services
             }
 
             return true;
+        }
+
+        // for determining whether a user list length
+        public static int GetUserListLength()
+        {
+            return UserDbRepository.Instance.GetUserDataBase().Count();
+        }
+
+        // for getermining whether a product list length
+        public static int GetProductListLength()
+        {
+            return ProductDbRepository.Instance.GetProductDatabase().Count();
         }
 
     }
