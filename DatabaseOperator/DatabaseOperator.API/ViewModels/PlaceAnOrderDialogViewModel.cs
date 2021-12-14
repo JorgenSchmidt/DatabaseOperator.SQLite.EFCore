@@ -54,17 +54,20 @@ namespace DatabaseOperator.API.ViewModels
                     (obj) =>
                     {
 
-                        if 
-                        (!String.IsNullOrEmpty(UserID) && !String.IsNullOrEmpty(ProductID) && QuantityProduct > 0 
-                        && 
-                        DbMethods.IsAIntNumber(UserID) && DbMethods.IsAIntNumber(ProductID)
-                        && 
-                        DbMethods.GetUserListLength() > Convert.ToInt32(UserID) && DbMethods.GetProductListLength() > Convert.ToInt32(ProductID))
+                        // In first we checking input by correct (1), in second we cheking input by ability to perform (2)
+
+                        // 1.
+                        if (!String.IsNullOrEmpty(UserID) && !String.IsNullOrEmpty(ProductID) && QuantityProduct > 0 
+                        && DbMethods.IsAIntNumber(UserID) && DbMethods.IsAIntNumber(ProductID)
+                        && DbMethods.GetUserListLength() > Convert.ToInt32(UserID) && DbMethods.GetProductListLength() > Convert.ToInt32(ProductID))
+                        
+                        // THEN
                         {
 
                             User targetUser = UserDbRepository.Instance.SearchUserByID(UserID)[0];
                             Product targetProduct = ProductDbRepository.Instance.SearchProductByID(ProductID)[0];
 
+                            // 2.
                             if (targetUser.Balance >= targetProduct.Price * QuantityProduct && targetProduct.Quantity >= QuantityProduct)
                             {
                                 DataBaseInteractor.PlaceAnOrder(targetUser, targetProduct, QuantityProduct);

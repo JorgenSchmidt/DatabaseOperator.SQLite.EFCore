@@ -46,6 +46,7 @@ namespace DatabaseOperator.API.Services
             return ProductDbRepository.Instance.DeleteProduct(_id);
         }
 
+        // for read all data base
         public static List<User> ShowUserDataBase ()
         {
             return UserDbRepository.Instance.GetUserDataBase();
@@ -111,7 +112,7 @@ namespace DatabaseOperator.API.Services
         {
             WindowInteractor.StaticUserList =
                 UserDbRepository.Instance.UpdateUser
-                (_targetUser.ID, _targetUser.FirstName, _targetUser.SecondName, -1 *  _targetProduct.Price * _quantityInOrder);
+                (_targetUser.ID, _targetUser.FirstName, _targetUser.SecondName, -1 * _targetProduct.Price * _quantityInOrder);
 
             WindowInteractor.StaticProductList =
                 ProductDbRepository.Instance.UpdateProduct

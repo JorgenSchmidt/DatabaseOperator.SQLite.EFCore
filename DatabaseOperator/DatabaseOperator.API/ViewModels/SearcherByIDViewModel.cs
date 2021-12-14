@@ -43,15 +43,21 @@ namespace DatabaseOperator.API.ViewModels
                         if (!String.IsNullOrEmpty(UserID) && DbMethods.IsAIntNumber(UserID) 
                         && String.IsNullOrEmpty(ProductID) 
                         && DbMethods.GetUserListLength() > Convert.ToInt32(UserID))
+
+                        // THEN
                         {
                             WindowInteractor.StaticUserList = DataBaseInteractor.SearchIDUser(UserID);
 
                             DialogWindowOperator.IDSearcherDialogWindow.Close();
                             DialogWindowOperator.IDSearcherDialogWindow = null;
                         }
-                        else if (String.IsNullOrEmpty(UserID) 
+
+                        else if 
+                        (String.IsNullOrEmpty(UserID) 
                         && !String.IsNullOrEmpty(ProductID) && DbMethods.IsAIntNumber(ProductID)
                         && DbMethods.GetProductListLength() > Convert.ToInt32(ProductID))
+
+                        // THEN
                         {
                             WindowInteractor.StaticProductList = DataBaseInteractor.SearchIDProduct(ProductID);
 

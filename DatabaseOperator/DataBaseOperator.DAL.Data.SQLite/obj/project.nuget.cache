@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AUNJ+EPeUZEDLAFhW1gj9VMsHKNSIl6qf8xl8AD5WXTF76tBWPLy9HJxTqAPBFwY3UGJ6K0HxDi3Il4sjpJFyQ==",
+  "dgSpecHash": "vc6NxK9L/0AYdTz3yDCOjB8zWQnUM067+6pOJw86OT2KZgOSR9EZLGPY1TPIllrzqoqmTtbwnr+OF90g505t2w==",
   "success": true,
   "projectFilePath": "D:\\ProgramData\\Projects\\DatabaseOperator.SQLite.EFCore\\DatabaseOperator\\DataBaseOperator.DAL.Data.SQLite\\DataBaseOperator.DAL.Data.SQLite.csproj",
   "expectedPackageFiles": [

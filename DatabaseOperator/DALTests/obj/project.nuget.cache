@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "g1OmiSOWwkm92IP0UUyFVE93Sdc7AbMDCkEAqOxIGNjvlodFWWviolenyavL2ZooCjRWt9jVffJO47hUf9uGGA==",
+  "dgSpecHash": "KsohsN7YZtnzs1NC2JJf0t2z0i5vv6kkuvDYDNzQbOfSOLjKSwU0sWTI2J5Cd8GqqHoAolH1MXD68o4ifnRR1Q==",
   "success": true,
   "projectFilePath": "D:\\ProgramData\\Projects\\DatabaseOperator.SQLite.EFCore\\DatabaseOperator\\DALTests\\DALTests.csproj",
   "expectedPackageFiles": [

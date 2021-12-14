@@ -50,27 +50,25 @@ namespace DatabaseOperator.API.ViewModels
                 (
                     (obj) =>
                     {
-
-                        // method of create bool expressions - 1st main line - checking for empty prop-s, 2nd main line - checking input for adecvacy
-                        // main line depends on with what object type we have to interaction
                         
                         if (!String.IsNullOrEmpty(FirstNameOfUser) && !String.IsNullOrEmpty(SecondNameOfUser) 
-                        && 
-                        DbMethods.IsAWord(FirstNameOfUser) && DbMethods.IsAWord(SecondNameOfUser)
-                        && 
-                        String.IsNullOrEmpty(ProductName))
+                        && DbMethods.IsAWord(FirstNameOfUser) && DbMethods.IsAWord(SecondNameOfUser)
+                        && String.IsNullOrEmpty(ProductName))
+
+                        // THEN
                         {
                             WindowInteractor.StaticUserList = DataBaseInteractor.SearchUserByName(FirstNameOfUser, SecondNameOfUser);
 
                             DialogWindowOperator.NameSearcherDialogWindow.Close();
                             DialogWindowOperator.NameSearcherDialogWindow = null;
                         }
-                        else if (
-                        String.IsNullOrEmpty(FirstNameOfUser) && String.IsNullOrEmpty(SecondNameOfUser) 
-                        && 
-                        !String.IsNullOrEmpty(ProductName)
-                        && 
-                        DbMethods.IsAWord(ProductName))
+
+                        else if 
+                            (String.IsNullOrEmpty(FirstNameOfUser) && String.IsNullOrEmpty(SecondNameOfUser) 
+                        &&  !String.IsNullOrEmpty(ProductName)
+                        &&  DbMethods.IsAWord(ProductName) )
+
+                        // THEN
                         {
                             WindowInteractor.StaticProductList = DataBaseInteractor.SearchProductByName(ProductName);
 

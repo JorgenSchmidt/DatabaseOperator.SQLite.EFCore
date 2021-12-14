@@ -69,14 +69,9 @@ namespace DatabaseOperator.API.ViewModels
                         // method of create bool expressions - 1st main line - checking for empty prop-s, 2nd main line - checking input for adecvacy
                         // main line depends on with what object type we have to interaction
 
-                        if
-
-                        // IF
-                        (!String.IsNullOrEmpty(FirstNameOfUser) && !String.IsNullOrEmpty(SecondNameOfUser)
-                        &&
-                        DbMethods.IsAWord(FirstNameOfUser) && DbMethods.IsAWord(SecondNameOfUser)
-                        &&
-                        String.IsNullOrEmpty(NameOfProduct) && PriceOfProduct == 0)
+                        if (!String.IsNullOrEmpty(FirstNameOfUser) && !String.IsNullOrEmpty(SecondNameOfUser)
+                        && DbMethods.IsAWord(FirstNameOfUser) && DbMethods.IsAWord(SecondNameOfUser)
+                        && String.IsNullOrEmpty(NameOfProduct) && PriceOfProduct == 0)
 
                         // THEN
                         {
@@ -88,13 +83,9 @@ namespace DatabaseOperator.API.ViewModels
 
                         
                         else if
-
-                        // ELSE IF
                         (String.IsNullOrEmpty(FirstNameOfUser) && String.IsNullOrEmpty(SecondNameOfUser)
-                        &&
-                        !String.IsNullOrEmpty(NameOfProduct) && PriceOfProduct > 0
-                        &&
-                        DbMethods.IsAWord(NameOfProduct))
+                        && !String.IsNullOrEmpty(NameOfProduct) && PriceOfProduct > 0
+                        && DbMethods.IsAWord(NameOfProduct))
 
                         // THEN
                         {

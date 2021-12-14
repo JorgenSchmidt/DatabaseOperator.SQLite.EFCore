@@ -116,20 +116,10 @@ namespace DatabaseOperator.API.ViewModels
                         // 2nd line - checking for empty for opposite prop-s
                         // 3rd line - checking for exist inputed ID's
 
-                        if
-
-                        // IF 
-
-                        // 1st line
-                        (!String.IsNullOrEmpty(UserID) && DbMethods.IsAIntNumber(UserID) 
-                        && 
-                        (!String.IsNullOrEmpty(FirstNameOfUser) && DbMethods.IsAWord(FirstNameOfUser) || !String.IsNullOrEmpty(SecondNameOfUser) && DbMethods.IsAWord(SecondNameOfUser) || UserBalance > 0)
-                        &&
-                        // 2nd line
-                        String.IsNullOrEmpty(ProductID) && String.IsNullOrEmpty(ProductName) && QuantityOfProduct == 0 && ProductPrice == 0
-                        &&
-                        // 3rd line
-                        DbMethods.GetUserListLength() > Convert.ToInt32(UserID))
+             /*1*/      if (!String.IsNullOrEmpty(UserID) && DbMethods.IsAIntNumber(UserID) 
+                        && (!String.IsNullOrEmpty(FirstNameOfUser) && DbMethods.IsAWord(FirstNameOfUser) || !String.IsNullOrEmpty(SecondNameOfUser) && DbMethods.IsAWord(SecondNameOfUser) || UserBalance > 0)
+             /*2*/      && String.IsNullOrEmpty(ProductID) && String.IsNullOrEmpty(ProductName) && QuantityOfProduct == 0 && ProductPrice == 0
+             /*3*/      && DbMethods.GetUserListLength() > Convert.ToInt32(UserID))
                         
                         // THEN
                         {
@@ -140,14 +130,9 @@ namespace DatabaseOperator.API.ViewModels
                         }
 
                         else if
-                        
-                        // ELSE IF
-                        
                         (!String.IsNullOrEmpty(ProductID) && DbMethods.IsAIntNumber(ProductID) && (!String.IsNullOrEmpty(ProductName) && DbMethods.IsAWord(ProductName) || QuantityOfProduct > 0 || ProductPrice > 0)
-                        &&
-                        String.IsNullOrEmpty(UserID) && String.IsNullOrEmpty(FirstNameOfUser) && String.IsNullOrEmpty(SecondNameOfUser) && UserBalance == 0
-                        && 
-                        DbMethods.GetProductListLength() > Convert.ToInt32(ProductID))
+                        && String.IsNullOrEmpty(UserID) && String.IsNullOrEmpty(FirstNameOfUser) && String.IsNullOrEmpty(SecondNameOfUser) && UserBalance == 0
+                        && DbMethods.GetProductListLength() > Convert.ToInt32(ProductID))
                         
                         // THEN
                         {

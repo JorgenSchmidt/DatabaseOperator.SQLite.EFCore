@@ -38,10 +38,12 @@ namespace DatabaseOperator.API.ViewModels
                 (
                     (obj) =>
                     {
-                        if 
-                        (!String.IsNullOrEmpty(UserID) && DbMethods.IsAIntNumber(UserID)
+
+                        if (!String.IsNullOrEmpty(UserID) && DbMethods.IsAIntNumber(UserID)
                         && String.IsNullOrEmpty(ProductID) 
                         && DbMethods.GetUserListLength() > Convert.ToInt32(UserID) )
+
+                        // THEN
                         {
                             WindowInteractor.StaticUserList = DataBaseInteractor.DeleteUser(UserID);
 
@@ -52,6 +54,8 @@ namespace DatabaseOperator.API.ViewModels
                         (String.IsNullOrEmpty(UserID)
                         && !String.IsNullOrEmpty(ProductID) && DbMethods.IsAIntNumber(ProductID)
                         && DbMethods.GetProductListLength() > Convert.ToInt32(ProductID))
+
+                        // THEN
                         {
                             WindowInteractor.StaticProductList = DataBaseInteractor.DeleteProduct(ProductID);
 

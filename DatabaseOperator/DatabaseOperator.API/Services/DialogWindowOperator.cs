@@ -1,13 +1,13 @@
 ﻿using System.Windows;
-using System.Collections.Generic;
 
 using DatabaseOperator.API.Views;
-using DataBaseOperator.Domain.Core;
 
 namespace DatabaseOperator.API.Services
 {
     public class DialogWindowOperator : Window
     {
+
+        // for every dialog window i use one static window object
 
         public static ObjectInitializatorWindow InitializerDialogWindow;
         public static ObjectUpdaterWindow UpdaterDialogWindow;
